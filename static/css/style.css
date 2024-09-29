@@ -1,0 +1,253 @@
+:root {
+    --gray: #131313;
+    --orange: #f6a016;
+    --white: #eeecec;
+    --whitegray: #181818;
+    --verywhitegray: #2b2b2b;
+}
+
+html, * {
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+body header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gray);
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+body header div {
+    display: flex;
+    align-items: center;
+}
+
+body header div img {
+    width: 125px;
+}
+
+body header div p {
+    font-size: 20px;
+}
+
+body header div nav > ul{
+    display: flex;
+
+}
+
+body header div p, body header div img {
+    margin: 0 10px;
+}
+
+body header div nav > ul li {
+    list-style-type: none;
+    margin: 0 2px;
+}
+
+body header div nav > ul li {
+    
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+body header div nav > ul li a {
+    text-decoration: none;
+}
+
+body header div nav > ul li:nth-last-child(1) {
+    background-color: var(--orange);
+    color: var(--gray);
+    border-radius: .375rem;
+    transition: background-color .1s;
+    transition: outline .1s;
+    
+}
+
+body header div nav > ul li:nth-last-child(1):hover {
+    background-color: transparent;
+    color: var(--white);
+    outline: var(--orange) 3px solid;
+    border-radius: .375rem;
+    
+}
+
+/* MAIN */
+
+.presentation {
+    background-image: url("../images/background.png");
+    background-position: bottom;
+    padding: 250px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .presentation .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .presentation .content div p {
+    margin-top: 20px;
+}
+
+main .presentation .content div button a {
+    text-decoration: none;
+}
+
+button.play {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: var(--orange);
+    color: var(--gray);
+    border-radius: .375rem;
+    border: none;
+}
+
+button.play:hover, button.discord:hover {
+    cursor: pointer;
+}
+
+button.discord {
+    padding: 10px 18px;
+    background-color: var(--white);
+    color: var(--gray);
+    border-radius: .375rem;
+    border: none;
+}
+
+button.discord a {
+    color: var(--gray);
+}
+
+main .content img {
+    width: 300px;
+}
+
+main .content span {
+    color: var(--orange);
+}
+
+/* ABOUT */
+
+#about, #members {
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 250px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 40px 0;
+}
+
+.box {
+    padding: 20px 10px;
+    background-color: var(--whitegray);
+    border: 0.5px solid var(--verywhitegray);
+    border-radius: .375rem;
+}
+
+.box .top {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.stats {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.stats .box {
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+.stats .box p {
+    transition: background-color 0.5s;
+}
+
+.stats .box:hover {
+    background-color: var(--white);
+    
+}
+
+.stats .box:hover > p {
+    color: var(--gray);
+}
+
+/* MEMBERS */
+
+#members {
+    display: flex;
+    justify-content: center;
+}
+
+#members .box {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#members .box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#members .box img {
+    width: 75px;
+}
+
+#members .officiers {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--gray);
+    padding: 0 250px;
+}
+
+footer div {
+    width: 100%;
+    border-top: var(--verywhitegray) 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
