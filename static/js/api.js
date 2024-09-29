@@ -1,5 +1,5 @@
 const proxyUrl =
-  "https://publicapi.nationsglory.fr/country/lime/EmpireCentreAfricain";
+  "http://127.0.0.1:3000/proxy?endURL=country/lime/EmpireCentreAfricain";
 
 fetch(proxyUrl)
   .then((response) => response.json())
